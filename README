@@ -1,0 +1,8 @@
+This document is aimed at providing an overview of the files that are present in this repo
+
+The repository contains the following files 
+
+1. run_analysis.R - File that contains the R script that was used to generate tidy data from the UCI HAR Dataset. The script was used to generate teh two datasets that are listed below.
+2. firstset.txt- The file with the first iteration of the tidy data. This dataset contains the subject number, the activity that was recorded and raw observations of variables that recorded means and standard devaiations
+3. secondset.txt- This contains the dataset that is specified in Q5 of the assignement. It contains the mean for each variable for each subject and each activity
+4. CodeBook.md- A markdown file that contains information on the variables in the tidy dataset and the transformation steps that were used to generate it

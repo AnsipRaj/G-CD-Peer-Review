@@ -3,19 +3,19 @@
 
 Section 1: Variables 
 
-The variables in the final tidy data set- consist of all the features described the mean and standard devations of observations that were part of the experiment on wearable technology, and two additional vairables indtroduced during analysis. The two new variables are- 
+The variables in the final tidy data set- consist of all the features described the mean and standard devations of observations that were part of the experiment on wearable technology, and two additional variables introduced during analysis. The two new variables are- 
 
 subject- This variable recorded the subject that the observations corresponded to.A total of 30 subjects numbered from 1-30 were recroded. The variable has no units. It is merely a number assigned to a person. 
 action- This variable recorded the the activity that teh subject undertook during the experiment.6 different activities were recorded. These are descriptive, character variables. The variable takes one of the follwing values 
-WALKING
-WALKING_UPSTAIRS
-WALKING_DOWNSTAIRS
-SITTING
-LAYING
-STANDING
+  WALKING
+  WALKING_UPSTAIRS
+  WALKING_DOWNSTAIRS
+  SITTING
+  LAYING
+  STANDING
 
 
-These variables were present in the original UCI HAR Dataset. The Variables are the mean and standard deviation measures for the following in the original dataset.  
+The follwoing variables were present in the original UCI HAR Dataset. The Variables are the mean and standard deviation measures for the following in the original dataset.  
 tBodyAcc XYZ
 tGravityAcc XYZ
 tBodyAccJerk XYZ

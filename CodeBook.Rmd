@@ -114,9 +114,9 @@ frequencybodyaccelerometerjerkmagnitudestddeviation
 frequencybodygyroscopemagnitudestddeviation         
 frequencybodygyroscopejerkmagnitudestddeviation    
 
-A total of 68 variables were present in the first dataset 
+A total of 68 variables are present in the tidy dataset
 
-The second dataset was prepared by calculating the mean of each variable for each subject and each activity. 
+The second dataset was prepared by calculating the mean of each variable for each subject and each activity. This is the dataset that is available in the repository
 
 
 Section 2: Transformation

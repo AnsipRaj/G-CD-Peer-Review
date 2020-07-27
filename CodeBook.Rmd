@@ -7,9 +7,9 @@ The variables in the final tidy data set- consist of all the features described 
 
 In addition to the 79 variables that fit the description above, two more variables were added by me during the processing of the project. 
 
-subjectname- This variable recorded the subject that the observations corresponded to.A total of 30 subjects numbered from 1-30 were recroded.
+subjectname- This variable recorded the subject that the observations corresponded to.A total of 30 subjects numbered from 1-30 were recroded. The variable has no units. It is merely a number assigned to a person. 
 
-subjectact- This variable recorded the the activity that teh subject undertook during the experiment.6 different activities were recorded.
+subjectact- This variable recorded the the activity that teh subject undertook during the experiment.6 different activities were recorded. These are descriptive, character variables
 
 A total of 81 variables were present in the first dataset 
 

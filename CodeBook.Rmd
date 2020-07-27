@@ -3,15 +3,118 @@
 
 Section 1: Variables 
 
-The variables in the final tidy data set- consist of all the features described the mean and standard devations of observations that were part of the experiment on wearable technology. These variables were present in the original UCI HAR Dataset. The final dataset merged values from both the test and train datasets that were present in the original UCI HAR Dataset folder. 
+The variables in the final tidy data set- consist of all the features described the mean and standard devations of observations that were part of the experiment on wearable technology, and two additional vairables indtroduced during analysis. The two new variables are- 
 
-In addition to the 79 variables that fit the description above, two more variables were added by me during the processing of the project. 
+subject- This variable recorded the subject that the observations corresponded to.A total of 30 subjects numbered from 1-30 were recroded. The variable has no units. It is merely a number assigned to a person. 
+action- This variable recorded the the activity that teh subject undertook during the experiment.6 different activities were recorded. These are descriptive, character variables. The variable takes one of the follwing values 
+WALKING
+WALKING_UPSTAIRS
+WALKING_DOWNSTAIRS
+SITTING
+LAYING
+STANDING
 
-subjectname- This variable recorded the subject that the observations corresponded to.A total of 30 subjects numbered from 1-30 were recroded. The variable has no units. It is merely a number assigned to a person. 
 
-subjectact- This variable recorded the the activity that teh subject undertook during the experiment.6 different activities were recorded. These are descriptive, character variables
+These variables were present in the original UCI HAR Dataset. The Variables are the mean and standard deviation measures for the following in the original dataset.  
+tBodyAcc XYZ
+tGravityAcc XYZ
+tBodyAccJerk XYZ
+tBodyGyro XYZ
+tBodyGyroJerk XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc XYZ
+fBodyAccJerk XYZ
+fBodyGyro XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+   
+Variables that start with t, refer to time domain signals, they were captured at a constant rate of 50Hz
+Variables that start with f, refer to frequency domain signals, these were computed using a Fast Fourier Transform
+Variables that contain the term Acc, correspond to measurements of linear acceleration which is measured with a device called an accelerometer 
+Variables that contain the term Gyro, correspond to measurements of angular velocity which is measured with a device called an gyroscope
+Acceleration and Gyro signals were fed into a low pass filter to generate body and gravity signals that are represented by Body and Gravity, repectively
+Variables that contain the terms Jerk and Mag, refer to the measurements of the magnitude and jerk signals
+All the measures were calculated for the X, Y and Z axes 
+Some variables erroneously contained the word 'Body', twice. This mistake was corrected.
 
-A total of 81 variables were present in the first dataset 
+The above information was used to create simple names for the variables in the tidy dataset. The final variables names are: 
+
+subject                                             
+action                                              
+timebodyaccelerometermeanxaxis                      
+timebodyaccelerometermeanyaxis                      
+timebodyaccelerometermeanzaxis                      
+timegravityaccelerometermeanxaxis                   
+timegravityaccelerometermeanyaxis                   
+timegravityaccelerometermeanzaxis                   
+timebodyaccelerometerjerkmeanxaxis                  
+timebodyaccelerometerjerkmeanyaxis                  
+timebodyaccelerometerjerkmeanzaxis                  
+timebodygyroscopemeanxaxis                          
+timebodygyroscopemeanyaxis                          
+timebodygyroscopemeanzaxis                          
+timebodygyroscopejerkmeanxaxis                      
+timebodygyroscopejerkmeanyaxis                      
+timebodygyroscopejerkmeanzaxis                      
+timebodyaccelerometermagnitudemean                  
+timegravityaccelerometermagnitudemean               
+timebodyaccelerometerjerkmagnitudemean              
+timebodygyroscopemagnitudemean                      
+timebodygyroscopejerkmagnitudemean                  
+frequencybodyaccelerometermeanxaxis                 
+frequencybodyaccelerometermeanyaxis                 
+frequencybodyaccelerometermeanzaxis                 
+frequencybodyaccelerometerjerkmeanxaxis             
+frequencybodyaccelerometerjerkmeanyaxis             
+frequencybodyaccelerometerjerkmeanzaxis             
+frequencybodygyroscopemeanxaxis                     
+frequencybodygyroscopemeanyaxis                     
+frequencybodygyroscopemeanzaxis                     
+frequencybodyaccelerometermagnitudemean             
+frequencybodyaccelerometerjerkmagnitudemean         
+frequencybodygyroscopemagnitudemean                 
+frequencybodygyroscopejerkmagnitudemean             
+timebodyaccelerometerstddeviationxaxis              
+timebodyaccelerometerstddeviationyaxis              
+timebodyaccelerometerstddeviationzaxis              
+timegravityaccelerometerstddeviationxaxis           
+timegravityaccelerometerstddeviationyaxis           
+timegravityaccelerometerstddeviationzaxis           
+timebodyaccelerometerjerkstddeviationxaxis          
+timebodyaccelerometerjerkstddeviationyaxis          
+timebodyaccelerometerjerkstddeviationzaxis          
+timebodygyroscopestddeviationxaxis                  
+timebodygyroscopestddeviationyaxis                  
+timebodygyroscopestddeviationzaxis                  
+timebodygyroscopejerkstddeviationxaxis              
+timebodygyroscopejerkstddeviationyaxis              
+timebodygyroscopejerkstddeviationzaxis              
+timebodyaccelerometermagnitudestddeviation          
+timegravityaccelerometermagnitudestddeviation       
+timebodyaccelerometerjerkmagnitudestddeviation      
+timebodygyroscopemagnitudestddeviation              
+timebodygyroscopejerkmagnitudestddeviation          
+frequencybodyaccelerometerstddeviationxaxis         
+frequencybodyaccelerometerstddeviationyaxis         
+frequencybodyaccelerometerstddeviationzaxis         
+frequencybodyaccelerometerjerkstddeviationxaxis     
+frequencybodyaccelerometerjerkstddeviationyaxis     
+frequencybodyaccelerometerjerkstddeviationzaxis     
+frequencybodygyroscopestddeviationxaxis             
+frequencybodygyroscopestddeviationyaxis             
+frequencybodygyroscopestddeviationzaxis             
+frequencybodyaccelerometermagnitudestddeviation     
+frequencybodyaccelerometerjerkmagnitudestddeviation 
+frequencybodygyroscopemagnitudestddeviation         
+frequencybodygyroscopejerkmagnitudestddeviation    
+
+A total of 68 variables were present in the first dataset 
 
 The second dataset was prepared by calculating the mean of each variable for each subject and each activity. 
 

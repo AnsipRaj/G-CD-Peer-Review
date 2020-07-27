@@ -1,0 +1,29 @@
+
+## Description of Variables and steps taken to generate tidy data 
+
+Section 1: Variables 
+
+The variables in the final tidy data set- consist of all the features described the mean and standard devations of observations that were part of the experiment on wearable technology. These variables were present in the original UCI HAR Dataset. The final dataset merged values from both the test and train datasets that were present in the original UCI HAR Dataset folder. 
+
+In addition to the 79 variables that fit the description above, two more variables were added by me during the processing of the project. 
+
+subjectname- This variable recorded the subject that the observations corresponded to.A total of 30 subjects numbered from 1-30 were recroded.
+
+subjectact- This variable recorded the the activity that teh subject undertook during the experiment.6 different activities were recorded.
+
+A total of 81 variables were present in the first dataset 
+
+The second dataset was prepared by calculating the mean of each variable for each subject and each activity. 
+
+
+Section 2: Transformation
+
+Most of the transformations that were to to generate the tidy data, involved combining the information in the various files present in the UCI HAR Dataset folder. The following steps were taken to generate the tidy data 
+
+1. The subjectname and subjectact columns were appended to the test and train dataset, based on thier values in the subject_test.txt and y_test.txt files 
+2. The Test and Train sets were merged using rbind 
+3. The variables in the combined dataset were named using the names provided in the features_info.txt file 
+4. The columns that contained mean and standard devaiation data were chosen through the grep() command. Variables that recorded the mean frequency were also included 
+5. Descriptive names for the activities were provided based on description in the activity_labels.txt file
+6. The mean for each subject for each activity was calculated for all variables using the melt() and dcast() functions
+
